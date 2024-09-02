@@ -1,0 +1,13 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "<worker-name>"
+main = "src/index.js"
+compatibility_date = "2024-08-21"
+
+[triggers]
+crons = ["0/5 * * * *"]
+
+[vars]
+TIMEOUT = 2000
+AWS_REGION = "eu-west-1"
+ORIGIN_HOSTNAME = "<hostname|ip"
+EC2_INSTANCE_ID = "<instance_id>"
